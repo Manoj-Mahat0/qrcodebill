@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Bill Generator</h2>
+        <div class="cname">
+            <label for="customerName">Customer Name:</label>
+            <input class="border" type="text" id="customerName" placeholder="Enter customer name">
+        </div>
+        
+        <div class="cadd">
+            <label for="customerAddress">Customer Address:</label>
+            <input class="border" type="text" id="customerAddress" placeholder="Enter customer address">
+        </div>
+        
+        <div class="fname">
+            <label for="itemName">Food Name:</label>
+            <input class="border" type="text" id="itemName" placeholder="Enter Food name">
+        </div>
+        
+        <div class="quan">
+            <label for="quantity">Quantity:</label>
+            <input class="border" type="number" id="quantity" placeholder="Enter quantity">
+        </div>
+        <div class="amt">
+            <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+        </div>
+        <button onclick="generateBill()">Generate Bill</button>
+        <div id="bill-details"></div>
+        <div id="qr-code"></div>
+    </div>
+
+    <script src="qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
